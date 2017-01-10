@@ -1,10 +1,60 @@
+body{
+	font-family: Roboto;
+}
+
+h1{
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:nth-child(2n){
+	background-color: #f7f7f7;
+}
+
+input{
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%;
+	/*makes it so that width includes the content and border, rather than just the content, so that width 100% is not messed up
+	by having padding (without this, the padding would cause the input to look wider than container*/
+	box-sizing: border-box;
+	padding: 13px 13px 13px 20px;
+	color: 2980b9;
+}
+
+/*fires when the input is selected*/
+input:focus{
+	background: white;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
 #container{
-	border: 2px solid gray;
 	width: 360px;
-	margin: 0 auto;
+	/*centers the div*/
+	margin: 2px auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
 .completed{
-	color: grey;
+	color: gray;
 	text-decoration: line-through;
 }
