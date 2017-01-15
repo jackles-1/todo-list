@@ -24,6 +24,11 @@ $("input[type='text']").keypress(function(event){
 		// clear text input
 		$(this).val("");
 		// append newTodo to ul
-		$("ul").append("<li><span>X </span>" + newTodo + "</li>");
+		$("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i> </span>" + newTodo + "</li>");
 	}
+});
+
+// Toggle input When Clicking the Plus
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
 });
